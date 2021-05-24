@@ -85,23 +85,41 @@
 
 .grid {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 90%;
+  flex-direction: column;
   margin-top: 3rem;
+  flex: 0 0 40%;
+  width: 100%;
+  /* flex-flow: row wrap */
+
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: row;
+  height: 100%;
+  padding: 1rem
 }
 
 .customCard {
   margin: 1rem;
-  padding: 1.5rem;
+  flex: 1;
+  padding: 3rem;
+  /* margin: 1rem; */
+  /* padding: 1.5rem; */
   text-align: left;
   color: inherit;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+  width: 100%;
+  height:100%;
 }
 
 .centerAlign {
