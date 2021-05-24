@@ -1,11 +1,20 @@
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.sectionBorderBox {
+  border-bottom: solid 1px rgba(0,0,0,.1);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  justify-content: center;
+  width: 90%;
+  text-align: center;
 }
 
 .main {
@@ -31,6 +40,11 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.header {
+  line-height: 1;
+  font-size: 3rem;
 }
 
 .title a {
@@ -64,7 +78,7 @@
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -76,6 +90,22 @@
   flex-wrap: wrap;
   max-width: 800px;
   margin-top: 3rem;
+}
+
+.customCard {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 45%;
+}
+
+.centerAlign {
+  text-align: center;
 }
 
 .card {
